@@ -1,0 +1,34 @@
+**Introduction:**
+This dataset contains scalp EEG recordings from 36 healthy university students (9 male, 27 female; ages 18-26 years) during mental arithmetic tasks and resting-state periods. The study was designed to investigate EEG correlates of cognitive activity during intensive mental workload involving serial subtraction. The dataset provides brain electrical activity measurements for studying the neural mechanisms of mathematical cognition and cognitive stress responses, with potential applications in cognitive neuroscience research, mental workload assessment, and brain-computer interface development.
+
+**Overview of the experiment:**
+Participants were recorded during two conditions: (1) resting-state with eyes closed, and (2) mental arithmetic task involving serial subtraction. During the resting state, participants sat comfortably in a dark, soundproof chamber and were instructed to relax. After a 3-minute adaptation period, a 3-minute resting-state EEG recording was made with eyes closed. Participants then performed a 4-minute mental arithmetic task during which they were presented with a 4-digit minuend and 2-digit subtrahend (e.g., 3141 - 42) and performed serial subtractions mentally. They were instructed to count accurately and quickly in their self-determined rhythm without speaking or using finger movements. The dataset stores the last 3 minutes of the rest period (180 seconds) and the first minute of mental arithmetic performance (60 seconds) for each participant. EEG was recorded using a Neurocom 23-channel monopolar system sampled at 500 Hz with electrodes placed according to the International 10/20 system and referenced to interconnected ear electrodes. Filters included a high-pass filter (0.5 Hz cut-off), low-pass filter (45 Hz cut-off), and power line notch filter (50 Hz). Participants were divided post-hoc into two performance groups based on the number of completed arithmetic operations: "good counters" (Group G, n=24, mean operations=21, SD=7.4) and "bad counters" (Group B, n=12, mean operations=7, SD=3.6).
+
+**Description of the preprocessing if any:**
+All recordings included only artifact-free EEG segments, with 30 of 66 initially recorded participants excluded due to excessive oculographic and myographic artifacts. Channel names have been standardized to match the International 10-20 nomenclature. The raw EDF files have been converted to BIDS format with proper channel type assignments (EEG for brain signals). Subject birth years were calculated from age and recording year. Recording dates have been set to January 1st of the recording year due to privacy considerations in the original dataset. Impedance checks confirmed all electrodes were below 5 kΩ prior to recording.
+
+**Description of the event values if any:**
+No events.tsv files are provided. The "task" field in the BIDS filenames indicates the experimental condition:
+- "rest": resting-state condition
+- "mentalArithmetic": mental arithmetic task condition
+
+**Citation:**
+When using this dataset, please cite:
+
+1. Zyma I, Tukaev S, Seleznov I, Kiyono K, Popov A, Chernykh M, Shpenkov O. Electroencephalograms during Mental Arithmetic Task Performance. Data. 2019; 4(1):14. https://doi.org/10.3390/data4010014
+
+2. PhysioNet database: https://doi.org/10.13026/C2JQ1P
+
+3. Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
+
+**Data curators:**
+Pierre Guetschel (BIDS conversion)
+
+Original data collection team:
+- Igor Zyma, PhD (National Technical University of Ukraine)
+- Sergii Tukaev (National Technical University of Ukraine)
+- Ivan Seleznov (National Technical University of Ukraine)
+- Ken Kiyono, PhD
+- Anton Popov (National Technical University of Ukraine)
+- Mariia Chernykh (National Technical University of Ukraine)
+- Oleksii Shpenkov (National Technical University of Ukraine)
