@@ -117,6 +117,10 @@ def main(
     source_root = Path(source_root).expanduser()
     bids_root = Path(bids_root).expanduser()
 
+    if finalize_only:
+        _finalize_dataset(bids_root, overwrite=overwrite)
+        return
+
     records = list(_get_records(source_root))
 
     subjects_file = source_root / "subject-info.csv"
@@ -131,10 +135,6 @@ def main(
     bids_root.mkdir(parents=True, exist_ok=True)
     for _, bids_path in records:
         bids_path = bids_path.update(root=bids_root)
-
-    if finalize_only:
-        _finalize_dataset(bids_root, overwrite=overwrite)
-        return
 
     # sanity check: no duplicate bids paths
     bids_paths = [bids_path.fpath for _, bids_path in records]
@@ -204,8 +204,18 @@ def _finalize_dataset(bids_root: Path, overwrite: bool = False):
         source_datasets=[
             {"URL": "https://physionet.org/content/eegmat/1.0.0/"},
         ],
-        authors=["Pierre Guetschel"],
+        authors=[
+            "Igor Zyma",
+            "Sergii Tukaev",
+            "Ivan Seleznov",
+            "Ken Kiyono",
+            "Anton Popov",
+            "Mariia Chernykh",
+            "Oleksii Shpenkov",
+        ],
+        acknowledgements="Pierre Guetschel updated the data to BIDS format.",
         overwrite=overwrite,
+        data_license="ODC-By-1.0",
     )
 
     # Remove macOS resource fork files that can break make_report
@@ -254,18 +264,3 @@ if __name__ == "__main__":
 
     Fire(main)
     # python bids_maker/datasets/zyma2019.py --source_root ~/data/arithmetic_zyma2019/ --bids_root ~/data/bids/arithmetic_zyma2019/ --overwrite=True
-
-# The participant template found: comprised of 9 male and 27 female participants;
-# handedness were all unknown;
-# ages ranged from 16.0 to 26.0 (mean = 18.25, std = 2.14)
-#  The EEG During Mental Arithmetic Tasks dataset was created by Pierre Guetschel
-# and conforms to BIDS version 1.7.0. This report was generated with MNE-BIDS
-# (https://doi.org/10.21105/joss.01896). The dataset consists of 36 participants
-# (comprised of 9 male and 27 female participants; handedness were all unknown;
-# ages ranged from 16.0 to 26.0 (mean = 18.25, std = 2.14)) . Data was recorded
-# using an EEG system sampled at 500.0 Hz with line noise at n/a Hz. There were 72
-# scans in total. Recording durations ranged from 62.0 to 188.0 seconds (mean =
-# 120.5, std = 59.71), for a total of 8675.86 seconds of data recorded over all
-# scans. For each dataset, there were on average 21.0 (std = 0.0) recording
-# channels per scan, out of which 21.0 (std = 0.0) were used in analysis (0.0 +/-
-# 0.0 were removed from analysis).

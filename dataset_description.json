@@ -2,9 +2,17 @@
     "Name": "EEG During Mental Arithmetic Tasks",
     "BIDSVersion": "1.7.0",
     "DatasetType": "derivative",
+    "License": "ODC-By-1.0",
     "Authors": [
-        "Pierre Guetschel"
+        "Igor Zyma",
+        "Sergii Tukaev",
+        "Ivan Seleznov",
+        "Ken Kiyono",
+        "Anton Popov",
+        "Mariia Chernykh",
+        "Oleksii Shpenkov"
     ],
+    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
     "ReferencesAndLinks": [
         "https://doi.org/10.3390/data4010014"
     ],
