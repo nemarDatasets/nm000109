@@ -1,0 +1,79 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Igor Zyma": {},
+    "Sergii Tukaev": {},
+    "Ivan Seleznov": {},
+    "Ken Kiyono": {},
+    "Anton Popov": {
+      "orcid": "0000-0002-1194-4424"
+    },
+    "Mariia Chernykh": {},
+    "Oleksii Shpenkov": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.3390/data4010014",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000109",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000109",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.13026/C2JQ1P",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementedBy"
+    }
+  ],
+  "title": "EEG During Mental Arithmetic Tasks",
+  "license": "ODC-By-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "182.7 MB (73 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".py",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset comprises scalp EEG recordings from 36 healthy university students during resting-state and mental arithmetic task conditions. Participants performed serial subtraction tasks while 23-channel EEG was recorded at 500 Hz according to the International 10/20 system. The dataset is designed to investigate neural correlates of cognitive workload and mathematical cognition, with applications in cognitive neuroscience, mental workload assessment, and brain-computer interface development.",
+  "methods_description": "EEG was recorded using a Neurocom 23-channel monopolar system sampled at 500 Hz with electrodes placed according to the International 10/20 system and referenced to interconnected ear electrodes. Filters included a high-pass filter (0.5 Hz cut-off), low-pass filter (45 Hz cut-off), and power line notch filter (50 Hz). Participants underwent a 3-minute resting-state recording with eyes closed followed by a 4-minute mental arithmetic task involving serial subtraction. The dataset stores the last 3 minutes of the rest period and the first minute of mental arithmetic performance for each participant.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "mental arithmetic"
+    },
+    {
+      "term": "cognitive workload"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "serial subtraction"
+    },
+    {
+      "term": "mathematical cognition"
+    }
+  ],
+  "source_hash": "256bc0c756a8bcfc00596f69252e6d724fee74b1d108151efc6b6521f1007d04"
+}
