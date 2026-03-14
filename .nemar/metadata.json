@@ -53,8 +53,8 @@
     ".tsv",
     ".yml"
   ],
-  "description": "This dataset comprises scalp EEG recordings from 36 healthy university students during resting-state and mental arithmetic task conditions. Participants performed serial subtraction tasks while 23-channel EEG was recorded at 500 Hz according to the International 10/20 system. The dataset is designed to investigate neural correlates of cognitive workload and mathematical cognition, with applications in cognitive neuroscience, mental workload assessment, and brain-computer interface development.",
-  "methods_description": "EEG was recorded using a Neurocom 23-channel monopolar system sampled at 500 Hz with electrodes placed according to the International 10/20 system and referenced to interconnected ear electrodes. Filters included a high-pass filter (0.5 Hz cut-off), low-pass filter (45 Hz cut-off), and power line notch filter (50 Hz). Participants underwent a 3-minute resting-state recording with eyes closed followed by a 4-minute mental arithmetic task involving serial subtraction. The dataset stores the last 3 minutes of the rest period and the first minute of mental arithmetic performance for each participant.",
+  "description": "This dataset comprises scalp EEG recordings from 36 healthy university students during resting-state and mental arithmetic task conditions. Participants performed serial subtraction tasks while 23-channel EEG was recorded at 500 Hz using the International 10/20 electrode placement system. The dataset is designed to investigate neural correlates of cognitive workload and mathematical cognition, with applications in cognitive neuroscience, mental workload assessment, and brain-computer interface research.",
+  "methods_description": "EEG was recorded using a Neurocom 23-channel monopolar system sampled at 500 Hz with electrodes placed according to the International 10/20 system and referenced to interconnected ear electrodes. Filters included a high-pass filter (0.5 Hz cut-off), low-pass filter (45 Hz cut-off), and power line notch filter (50 Hz). The protocol consisted of a 3-minute resting-state recording with eyes closed and a 4-minute mental arithmetic task involving serial subtraction. The dataset stores the last 3 minutes of the rest period and the first minute of mental arithmetic performance for each participant.",
   "keywords": [
     {
       "term": "EEG"
@@ -66,7 +66,7 @@
       "term": "cognitive workload"
     },
     {
-      "term": "resting state"
+      "term": "resting-state"
     },
     {
       "term": "serial subtraction"
