@@ -1,31 +1,32 @@
 {
-    "Name": "EEG During Mental Arithmetic Tasks",
-    "BIDSVersion": "1.7.0",
-    "DatasetType": "derivative",
-    "License": "ODC-By-1.0",
-    "Authors": [
-        "Igor Zyma",
-        "Sergii Tukaev",
-        "Ivan Seleznov",
-        "Ken Kiyono",
-        "Anton Popov",
-        "Mariia Chernykh",
-        "Oleksii Shpenkov"
-    ],
-    "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
-    "ReferencesAndLinks": [
-        "https://doi.org/10.3390/data4010014"
-    ],
-    "GeneratedBy": [
-        {
-            "Name": "MNE-BIDS",
-            "Version": "0.17.0",
-            "CodeURL": "https://mne.tools/mne-bids/"
-        }
-    ],
-    "SourceDatasets": [
-        {
-            "URL": "https://physionet.org/content/eegmat/1.0.0/"
-        }
-    ]
+  "Name": "EEG During Mental Arithmetic Tasks",
+  "BIDSVersion": "1.7.0",
+  "DatasetType": "derivative",
+  "License": "ODC-By-1.0",
+  "Authors": [
+    "Igor Zyma",
+    "Sergii Tukaev",
+    "Ivan Seleznov",
+    "Ken Kiyono",
+    "Anton Popov",
+    "Mariia Chernykh",
+    "Oleksii Shpenkov"
+  ],
+  "Acknowledgements": "Pierre Guetschel updated the data to BIDS format.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.3390/data4010014"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "MNE-BIDS",
+      "Version": "0.17.0",
+      "CodeURL": "https://mne.tools/mne-bids/"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://physionet.org/content/eegmat/1.0.0/"
+    }
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000109"
 }
