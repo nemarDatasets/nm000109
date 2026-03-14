@@ -28,5 +28,6 @@
       "URL": "https://physionet.org/content/eegmat/1.0.0/"
     }
   ],
-  "DatasetDOI": "10.82901/nemar.nm000109"
+  "DatasetDOI": "10.82901/nemar.nm000109",
+  "Version": "1.0.0"
 }
